@@ -28,8 +28,16 @@ export default function Navbar() {
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 shadow-lg shadow-brand-600/30">
             <Icon name="graduation" className="h-5 w-5 text-white" />
           </span>
-          <span className="font-display text-lg font-bold tracking-tight text-slate-900">
-            Accredian<span className="text-brand-600"> Enterprise</span>
+          <span
+            className={`font-display text-lg font-bold tracking-tight transition-colors duration-300 ${
+              scrolled || open ? "text-slate-900" : "text-white"
+            }`}
+          >
+            Accredian
+            <span className={scrolled || open ? "text-brand-600" : "text-brand-300"}>
+              {" "}
+              Enterprise
+            </span>
           </span>
         </a>
 
@@ -38,7 +46,11 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="rounded-full px-4 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-brand-50 hover:text-brand-700"
+              className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                scrolled || open
+                  ? "text-slate-600 hover:bg-brand-50 hover:text-brand-700"
+                  : "text-slate-200 hover:bg-white/10 hover:text-white"
+              }`}
             >
               {link.label}
             </a>
