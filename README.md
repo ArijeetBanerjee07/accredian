@@ -4,8 +4,8 @@ A responsive, production-ready partial clone of the [Accredian Enterprise](https
 
 ## Live Demo & Repo
 
-- **Live link:** (deployed on Vercel)
-- **GitHub repo:** (public repository)
+- **Live link:** (deployed on Vercel — see "Deploy on Vercel" below)
+- **GitHub repo:** https://github.com/wohnnetz-arijeet/accredian-enterprise
 
 ## Tech Stack
 
